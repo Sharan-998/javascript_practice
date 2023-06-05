@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gandluri Sharan</title>
+    </head>
+<body>
+<div >
+</div>
+<script>
+    let environment = "test";
+    let value = 100;
+    switch( environment){
+        case "dev": 
+            value += value*0.10;
+            break;
+        case "test":
+            value += value*0.20;
+            break;
+        case "stage":
+            value += value*0.30;
+            break;
+        case "prod":
+            value += value*0.05;
+            break;
+    }
+    console.log(value)
+
+</script>
+</body>
+</html>
+

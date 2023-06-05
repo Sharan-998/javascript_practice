@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gandluri Sharan</title>
+    </head>
+<body>
+<div id="demo">
+    
+</div>
+<script>
+    let hobbies_arr = ["games","reading","sports"]
+    let hobbies = ""
+    function myFunction(value, index, array) {
+         hobbies += value + "<br>";
+    }
+    function addNewHobby(hobby){
+        hobbies_arr.push(hobby)
+    }
+    deleteHobby("games")
+    function deleteHobby(hobby){
+        let del_index = hobbies_arr.indexOf(hobby);
+        hobbies_arr.splice(del_index,1);
+    }
+    hobbies_arr.forEach(myFunction)
+
+    document.getElementById("demo").innerHTML = hobbies;
+
+</script>
+</body>
+</html>
+
