@@ -7,9 +7,10 @@
 <div >
 </div>
 <script>
-    let x = [1,2,3,4,5]
+    let x = [42,12,412,4125,122]
     Array.prototype.secondSmallest = function() {
-    this.sort();
+    this.sort(function(a, b){return a - b});
+    console.log(this)
     return this[1]
     };
    var s =  x.secondSmallest();
